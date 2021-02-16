@@ -51,7 +51,7 @@ public class StringCalculator {
     /**
      * converts string to integer
      * @param i
-     * @return
+     * @return Integer
      */
     private Integer toInt(String i) {
         return Integer.parseInt(i);
@@ -60,7 +60,7 @@ public class StringCalculator {
     /**
      * take input string and create string tokens
      * @param text
-     * @return
+     * @return Strings
      */
     private String[] createTokens(String text) {
         if (text.startsWith("//")) {
@@ -73,7 +73,7 @@ public class StringCalculator {
     /**
      * take input string and create string tokens
      * @param text
-     * @return
+     * @return strings
      */
     private String[] splitUsingNewLineAndCommas(String text) {
         return text.split(",|\n");
@@ -81,7 +81,7 @@ public class StringCalculator {
     /**
      * take input string and create string tokens
      * @param text
-     * @return
+     * @return strings
      */
     private String[] splitUsingCustomDelimiter(String text) {
         Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(text);
